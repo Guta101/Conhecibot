@@ -1,0 +1,21 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+  - faq
+  - conversa
+  - geral
+  - perguntas:
+      use_entities:
+        - materias
+
+entities:
+  - materias
+
+slots:
+  materias:
+    type: text
+
+actions:
+  - action_procurar_artigo

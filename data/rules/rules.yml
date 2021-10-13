@@ -1,0 +1,11 @@
+version: "2.0"
+
+rules:
+  - rule: Responder FAQs
+    steps:
+    - intent: faq
+    - action: utter_faq
+  - rule: Responder Conversa
+    steps:
+    - intent: conversa
+    - action: utter_conversa

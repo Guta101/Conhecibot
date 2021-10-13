@@ -1,0 +1,19 @@
+version: "2.0"
+
+nlu:
+- intent: conversa/saudacoes
+  examples: |
+    - oi
+    - olá
+    - eai
+    - bom dia
+    - boa tarde
+    - boa noite
+- intent: conversa/adeus
+  examples: |
+    - boa noite
+    - adeus
+    - tchau
+    - até mais
+    - falou
+    - flw

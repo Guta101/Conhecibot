@@ -1,0 +1,60 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: caminho conversa 1
+  steps:
+  - user: |
+      Eai!
+    intent: conversa
+  - action: utter_conversa
+
+- story: caminho conversa 2
+  steps:
+  - user: |
+      Adeus
+    intent: conversa
+  - action: utter_conversa
+
+- story: caminho geral 1
+  steps:
+  - user: |
+      Sim
+    intent: geral
+  - action: utter_geral
+
+- story: caminho geral 2
+  steps:
+  - user: |
+      Não
+    intent: geral
+  - action: utter_geral
+
+- story: caminho faq 1
+  steps:
+  - user: |
+      Quem é você?
+    intent: faq
+  - action: utter_faq
+
+- story: caminho faq 2
+  steps:
+  - user: |
+      O que você faz?
+    intent: faq
+  - action: utter_faq
+
+- story: pergunta submateria
+  steps:
+  - user: |
+      Quais materiais de cálculo são importantes?
+    intent: perguntas
+  - action: utter_perguntas
+
+- story: pergunta materia
+  steps:
+  - user: |
+      O que é redes?
+    intent: perguntas
+  - action: utter_perguntas
+

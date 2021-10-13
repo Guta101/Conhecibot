@@ -1,0 +1,17 @@
+version: "2.0"
+
+nlu:
+- intent: faq/quem
+  examples: |
+    - qual é o seu nome
+    - quem é você
+    - o que você é
+    - o que é você
+    - como você se chama
+- intent: faq/objetivo
+  examples: |
+    - qual é o seu objetivo?
+    - o que você faz?
+    - por que você existe?
+    - pra que você serve?
+    - o que você pode fazer?

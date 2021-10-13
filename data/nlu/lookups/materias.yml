@@ -1,0 +1,10 @@
+version: "2.0"
+nlu:
+  - lookup: materias
+    examples: |
+      - estatística
+      - organização de computadores
+      - redes
+      - redes de comunicação de dados
+      - sistemas
+      - sistemas operacionais

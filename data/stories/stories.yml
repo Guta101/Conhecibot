@@ -1,0 +1,12 @@
+version: "2.0"
+
+stories:
+  - story: perguntas
+    steps:
+      - intent: perguntas
+      - action: utter_perguntas
+
+  - story: geral
+    steps:
+      - intent: geral
+      - action: utter_geral

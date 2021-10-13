@@ -1,0 +1,23 @@
+version: "2.0"
+
+nlu:
+- intent: geral/sim
+  examples: |
+    - sim
+    - ss
+    - com certeza
+    - é claro
+    - correto
+    - isso mesmo
+    - isso aí
+    - acho que sim
+- intent: geral/nao
+  examples: |
+    - não
+    - nn
+    - nunca
+    - nem pensar
+    - aí não
+    - acho que não
+
+

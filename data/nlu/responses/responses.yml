@@ -1,0 +1,26 @@
+version: "2.0"
+
+responses:
+  #Conversa
+  utter_conversa/saudacoes:
+    - text: "Olá!"
+  utter_conversa/adeus:
+    - text: "Até logo!"
+
+  #Geral
+  utter_geral/sim:
+    - text: "Ok"
+  utter_geral/nao:
+    - text: "Complicado"
+
+  #FAQ
+  utter_faq/quem:
+    - text: "Meu nome é ConheciBot!"
+  utter_faq/objetivo:
+    - text: "Meu objetivo é te ajudar"
+
+  #Perguntas
+  utter_perguntas/materia:
+    - text: "Minha base de dados ainda não tem nada sobre {materias}"
+  utter_perguntas/submateria:
+    - text: "(sub)Minha base de dados ainda não tem nada sobre {materias}"
