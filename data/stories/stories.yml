@@ -4,7 +4,7 @@ stories:
   - story: perguntas
     steps:
       - intent: perguntas
-      - action: utter_perguntas
+      - action: action_procurar_artigo
 
   - story: geral
     steps:

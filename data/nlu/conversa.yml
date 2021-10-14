@@ -17,3 +17,50 @@ nlu:
     - até mais
     - falou
     - flw
+- intent: conversa/como_esta
+  examples: |
+    - como você está?
+    - como vai?
+    - como andam as coisas?
+    - eai, como vecê está?
+    - oi mano, como estão as coisas?
+    - eae cara, tudo encima?
+    - fala mano, como que estão as coisas?
+    - oi, tudo bem?
+    - você está bem?
+    - você está feliz?
+    - você está triste?
+    - tudo ok com você?
+- intent: conversa/quantos_anos
+  examples: |
+    - quantos anos você tem?
+    - à quanto tempo você existe?
+    - qual a sua idade?
+    - você nasceu em que ano?
+    - você sabe quantos anos você tem?
+    - você sabe sua idade?
+    - me diga quantos anos você tem
+    - me fale em que ano você nasceu
+- intent: conversa/e_bot
+  examples: |
+    - você é um bot?
+    - você é um robô?
+    - você é uma AI?
+    - você é humano?
+    - estou conversando com um robô?
+    - estou conversando com uma IA?
+    - o que é você?
+    - estou conversando com um humano?
+- intent: conversa/onde
+  examples: |
+    - de onde você é?
+    - de qual país você é?
+    - de qual área você é?
+    - qual seu local de nascimento?
+    - você é dessa área?
+    - onde você vive?
+    - onde você está?
+    - de qual cidade você é?
+    - de qual estado você é?
+    - qual a sua localização?
+    - onde você mora?

@@ -3,11 +3,11 @@ version: "2.0"
 nlu:
 - intent: faq/quem
   examples: |
-    - qual é o seu nome
-    - quem é você
-    - o que você é
-    - o que é você
-    - como você se chama
+    - qual é o seu nome?
+    - quem é você?
+    - o que você é?
+    - o que é você?
+    - como você se chama?
 - intent: faq/objetivo
   examples: |
     - qual é o seu objetivo?
@@ -15,3 +15,11 @@ nlu:
     - por que você existe?
     - pra que você serve?
     - o que você pode fazer?
+    - pode me explicar o que você faz?
+    - o que você consegue fazer?
+    - o que você faz?
+    - me diga o que você pode fazer
+    - me fala o que você consegue fazer
+    - o que eu posso te perguntar?
+    - preciso de ajuda
+    - o que você pode me ensinar?

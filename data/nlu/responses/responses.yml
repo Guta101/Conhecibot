@@ -6,6 +6,14 @@ responses:
     - text: "Olá!"
   utter_conversa/adeus:
     - text: "Até logo!"
+  utter_conversa/como_esta:
+    - text: "Tudo ótimo! E com você?"
+  utter_conversa/quantos_anos:
+    - text: "Eu nasci em 2021!"
+  utter_conversa/e_bot:
+    - text: "Eu sou um bot!"
+  utter_conversa/onde:
+    - text: "Estou localizado em Minas Gerais!"
 
   #Geral
   utter_geral/sim:

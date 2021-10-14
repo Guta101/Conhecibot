@@ -16,6 +16,34 @@ stories:
     intent: conversa
   - action: utter_conversa
 
+- story: caminho conversa 3
+  steps:
+  - user: |
+      Como você está?
+    intent: conversa
+  - action: utter_conversa
+
+- story: caminho conversa 4
+  steps:
+  - user: |
+      Quantos anos você tem?
+    intent: conversa
+  - action: utter_conversa
+
+- story: caminho conversa 5
+  steps:
+  - user: |
+      Você é um robô?
+    intent: conversa
+  - action: utter_conversa
+
+- story: caminho conversa 6
+  steps:
+  - user: |
+      Onde você mora?
+    intent: conversa
+  - action: utter_conversa
+
 - story: caminho geral 1
   steps:
   - user: |
@@ -49,12 +77,12 @@ stories:
   - user: |
       Quais materiais de cálculo são importantes?
     intent: perguntas
-  - action: utter_perguntas
+  - action: action_procurar_artigo
 
 - story: pergunta materia
   steps:
   - user: |
       O que é redes?
     intent: perguntas
-  - action: utter_perguntas
+  - action: action_procurar_artigo
 
