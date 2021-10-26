@@ -20,6 +20,7 @@ nlu:
 - intent: conversa/como_esta
   examples: |
     - como você está?
+    - como vc esta?
     - como vai?
     - como andam as coisas?
     - eai, como vecê está?

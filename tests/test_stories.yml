@@ -86,3 +86,16 @@ stories:
     intent: perguntas
   - action: action_procurar_artigo
 
+- story: pergunta quem
+  steps:
+  - user: |
+      Quem é você?
+    intent: faq/quem
+  - action: utter_faq/quem
+
+- story: pergunta objetivo
+  steps:
+  - user: |
+      O que você faz?
+    intent: faq/objetivo
+  - action: utter_faq/objetivo
