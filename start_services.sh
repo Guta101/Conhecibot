@@ -1,3 +1,4 @@
 cd app/
 
-resa run --enable-api --cors "*"
+rasa run --model models --enable-api --cors "*" --debug \
+         -p $PORT
