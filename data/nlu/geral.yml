@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: geral/sim
   examples: |
@@ -11,6 +10,8 @@ nlu:
     - isso mesmo
     - isso aí
     - acho que sim
+    - ok
+    - top bixo
 - intent: geral/nao
   examples: |
     - não
@@ -19,5 +20,3 @@ nlu:
     - nem pensar
     - aí não
     - acho que não
-
-

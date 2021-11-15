@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: perguntas/materia
   examples: |
@@ -9,6 +8,12 @@ nlu:
     - me mostre os materiais sobre [redes de comunicação de dados](materias)
     - me explique sobre [cálculo](materias)
     - fale sobre [estatística](materias)
+    - como calcular
+    - pode me falar sobre [cálculo](materias)?
+    - Me fale sobre [redes](materias)
+    - [Sistemas](materias)
+    - [Redes](materias)
+    - [Calculo](materias)
 - intent: perguntas/submateria
   examples: |
     - qual é a publicação mais acessada de [cálculo](materias)?
@@ -17,4 +22,3 @@ nlu:
     - o que é importante estudar em [redes](materias)?
     - o que estudar em [redes de comunicação de dados](materias)?
     - ache materiais sobre [sistemas operacionais](materias)
-

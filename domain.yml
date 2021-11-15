@@ -1,21 +1,40 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
 intents:
-  - faq
-  - conversa
-  - geral
-  - perguntas:
-      use_entities:
-        - materias
-
+- faq:
+    use_entities: true
+- conversa:
+    use_entities: true
+- geral:
+    use_entities: true
+- perguntas:
+    use_entities: true
 entities:
-  - materias
-
+- materias
 slots:
   materias:
-    type: text
-
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_conversa/adeus:
+  - text: Até mais!
+  - text: Até a próxima!
+  utter_conversa/como_esta:
+  - text: Tudo bem! e você?
+  utter_conversa/onde:
+  - text: Eu moro em Minas Gerais!
+  utter_conversa/quantos_anos:
+  - text: Eu fui criado em 2021!
+  utter_perguntas/feedback:
+  - text: Este artigo foi útil?
+  - text: Este artigo lhe ajudou?
 actions:
-  - action_procurar_artigo
+- action_procurar_artigo
+forms: {}
+e2e_actions: []

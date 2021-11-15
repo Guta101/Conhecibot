@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: conversa/saudacoes
   examples: |
@@ -9,6 +8,11 @@ nlu:
     - bom dia
     - boa tarde
     - boa noite
+    - ola
+    - Salve
+    - alo
+    - salve
+    - E aí
 - intent: conversa/adeus
   examples: |
     - boa noite
@@ -17,6 +21,7 @@ nlu:
     - até mais
     - falou
     - flw
+    - ate mais
 - intent: conversa/como_esta
   examples: |
     - como você está?
@@ -42,6 +47,8 @@ nlu:
     - você sabe sua idade?
     - me diga quantos anos você tem
     - me fale em que ano você nasceu
+    - Quantos anos você tem?
+    - quantos anos tu tem menó?
 - intent: conversa/e_bot
   examples: |
     - você é um bot?
@@ -52,6 +59,7 @@ nlu:
     - estou conversando com uma IA?
     - o que é você?
     - estou conversando com um humano?
+    - robo?
 - intent: conversa/onde
   examples: |
     - de onde você é?
@@ -65,3 +73,4 @@ nlu:
     - de qual estado você é?
     - qual a sua localização?
     - onde você mora?
+    - Onde você mora?
