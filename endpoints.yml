@@ -35,8 +35,8 @@ action_endpoint:
 # Event broker which all conversation events should be streamed to.
 # https://rasa.com/docs/rasa/event-brokers
 
-#event_broker:
-#  url: localhost
-#  username: username
-#  password: password
-#  queue: queue
+event_broker:
+  url: 67.205.181.47:5672
+  username: guta101
+  password: mariana12
+  queue: queue
