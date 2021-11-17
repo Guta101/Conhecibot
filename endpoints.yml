@@ -40,6 +40,6 @@ event_broker:
   url: 67.205.181.47
   port: 5672
   username: user
-  password: mariana12
+  password: eyrUQyQyy9aFdzYo1D
   queue:
     - "rasa_production_events"
