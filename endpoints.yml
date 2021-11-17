@@ -36,9 +36,10 @@ action_endpoint:
 # https://rasa.com/docs/rasa/event-brokers
 
 event_broker:
+  type: "pika"
   url: 67.205.181.47
   port: 5672
-  username: guta101
+  username: user
   password: mariana12
   queue:
     - "rasa_production_events"
