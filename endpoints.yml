@@ -35,11 +35,11 @@ action_endpoint:
 # Event broker which all conversation events should be streamed to.
 # https://rasa.com/docs/rasa/event-brokers
 
-event_broker:
-  type: "pika"
-  url: 67.205.181.47
-  port: 5672
-  username: user
-  password: eyrUQyQyy9aFdzYo1D
-  queue:
-    - "rasa_production_events"
+#event_broker:
+#  type: "pika"
+#  url: 67.205.181.47
+#  port: 5672
+#  username: user
+#  password: eyrUQyQyy9aFdzYo1D
+#  queue:
+#    - "rasa_production_events"
