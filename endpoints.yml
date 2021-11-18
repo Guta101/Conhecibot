@@ -38,6 +38,7 @@ action_endpoint:
 event_broker:
   type: "pika"
   url: 67.205.181.47
+  port: 5672
   username: user
   password: Qbggq90H0co93Us6WyHj
   queue:
