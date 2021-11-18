@@ -34,6 +34,8 @@ responses:
   utter_perguntas/feedback:
   - text: Este artigo foi útil?
   - text: Este artigo lhe ajudou?
+  utter_conversa/saudacoes:
+  - text: Eai!
 actions:
 - action_procurar_artigo
 forms: {}
