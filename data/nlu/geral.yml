@@ -1,6 +1,6 @@
 version: "2.0"
 nlu:
-- intent: geral/sim
+- intent: positivo
   examples: |
     - sim
     - ss
@@ -12,7 +12,7 @@ nlu:
     - acho que sim
     - ok
     - top bixo
-- intent: geral/nao
+- intent: negativo
   examples: |
     - não
     - nn

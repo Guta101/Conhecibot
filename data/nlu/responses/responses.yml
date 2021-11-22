@@ -12,15 +12,13 @@ responses:
   - text: Eu sou um bot!
   utter_conversa/onde:
   - text: Estou localizado em Minas Gerais!
-  utter_geral/sim:
+  utter_positivo:
   - text: Ok
-  utter_geral/nao:
+  utter_negativo:
   - text: Complicado
   utter_faq/quem:
   - text: Meu nome é ConheciBot! Eu fui criado para o projeto integrador da Unifagoc.
   utter_faq/objetivo:
   - text: Meu objetivo é te ajudar a encontrar materiais relacionados à computação! Me pergunte alguma coisa!
-  utter_perguntas/materia:
+  utter_perguntas:
   - text: Minha base de dados ainda não tem nada sobre {materias}
-  utter_perguntas/submateria:
-  - text: (sub)Minha base de dados ainda não tem nada sobre {materias}

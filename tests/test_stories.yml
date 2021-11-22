@@ -44,19 +44,19 @@ stories:
     intent: conversa
   - action: utter_conversa
 
-- story: caminho geral 1
+- story: caminho positivo 1
   steps:
   - user: |
       Sim
-    intent: geral
-  - action: utter_geral
+    intent: positivo
+  - action: utter_positivo
 
-- story: caminho geral 2
+- story: caminho negativo 1
   steps:
   - user: |
       Não
-    intent: geral
-  - action: utter_geral
+    intent: negativo
+  - action: utter_negativo
 
 - story: caminho faq 1
   steps:
@@ -72,14 +72,14 @@ stories:
     intent: faq
   - action: utter_faq
 
-- story: pergunta submateria
+- story: pergunta materia 1
   steps:
   - user: |
       Quais materiais de cálculo são importantes?
     intent: perguntas
   - action: action_procurar_artigo
 
-- story: pergunta materia
+- story: pergunta materia 2
   steps:
   - user: |
       O que é redes?

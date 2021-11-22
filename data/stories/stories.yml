@@ -3,15 +3,17 @@ stories:
 - story: perguntas
   steps:
   - intent: perguntas
-  - action: utter_perguntas
-  - action: utter_perguntas/feedback
+  - action: action_procurar_artigo
+  - action: action_imprimir_artigo
+  - action: utter_feedback
   - checkpoint: perguntas_check_feedback
-- story: perguntas_feedback
+- story: perguntas_feedback_positivo
   steps:
   - checkpoint: perguntas_check_feedback
-  - intent: geral
-  - action: utter_geral
-- story: geral
+  - intent: positivo
+  - action: utter_positivo
+- story: perguntas_feedback_negativo
   steps:
-  - intent: geral
-  - action: utter_geral
+  - checkpoint: perguntas_check_feedback
+  - intent: negativo
+  - action: utter_negativo

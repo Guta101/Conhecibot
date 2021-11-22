@@ -9,7 +9,9 @@ intents:
     use_entities: true
 - conversa:
     use_entities: true
-- geral:
+- positivo:
+    use_entities: true
+- negativo:
     use_entities: true
 - perguntas:
     use_entities: true
@@ -21,6 +23,8 @@ slots:
     initial_value: null
     auto_fill: true
     influence_conversation: true
+  artigos:
+    type: list
 responses:
   utter_conversa/adeus:
   - text: Até mais!
@@ -31,12 +35,13 @@ responses:
   - text: Eu moro em Minas Gerais!
   utter_conversa/quantos_anos:
   - text: Eu fui criado em 2021!
-  utter_perguntas/feedback:
+  utter_feedback:
   - text: Este artigo foi útil?
   - text: Este artigo lhe ajudou?
   utter_conversa/saudacoes:
   - text: Eai!
 actions:
 - action_procurar_artigo
+- action_imprimir_artigo
 forms: {}
 e2e_actions: []

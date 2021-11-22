@@ -1,6 +1,6 @@
 version: "2.0"
 nlu:
-- intent: perguntas/materia
+- intent: perguntas
   examples: |
     - pode me explicar [sistemas operacionais](materias)?
     - pode me falar sobre [organização de computadores](materias)?
@@ -14,8 +14,6 @@ nlu:
     - [Sistemas](materias)
     - [Redes](materias)
     - [Calculo](materias)
-- intent: perguntas/submateria
-  examples: |
     - qual é a publicação mais acessada de [cálculo](materias)?
     - qual é o post mais acessado sobre [cálculo](materias)
     - quais materiais são importantes para [estatística](materias)?
