@@ -1,24 +1,34 @@
 version: "2.0"
 responses:
   utter_conversa/saudacoes:
-  - text: Olá!
+  - text: Olá! Em que posso ajudar?
   utter_conversa/adeus:
   - text: Até logo!
   utter_conversa/como_esta:
   - text: Tudo ótimo! E com você?
+  - text: Tudo bem! E você?
   utter_conversa/quantos_anos:
   - text: Eu nasci em 2021!
+  - text: Eu fui criado em 2021!
   utter_conversa/e_bot:
   - text: Eu sou um bot!
   utter_conversa/onde:
   - text: Estou localizado em Minas Gerais!
+  - text: Eu fui criado em Minas Gerais!
   utter_positivo:
-  - text: Ok
+  - text: Ok.
   utter_negativo:
-  - text: Complicado
+  - text: Que pena =(
   utter_faq/quem:
-  - text: Meu nome é ConheciBot! Eu fui criado para o projeto integrador da Unifagoc.
+  - text: Meu nome é ConheciBot! Eu fui criado para o projeto integrador da Unifagoc. Você pode saber mais sobre a minha história clicando em "Saiba mais sobre o Projeto" no final da página.
   utter_faq/objetivo:
   - text: Meu objetivo é te ajudar a encontrar materiais relacionados à computação! Me pergunte alguma coisa!
   utter_perguntas:
-  - text: Minha base de dados ainda não tem nada sobre {materias}
+  - text: Minha base de dados ainda não tem nada sobre {materias}...
+  utter_excecao:
+  - text: Acho que não entendi o que você disse.
+  - text: Acho que não sei a resposta pra isso.
+  utter_retry:
+  - text: Que pena =/. Quer ver os outros artigos que eu achei sobre o assunto?
+  - text: Oh não! Deseja ver o que eu encontrei além disso?
+

@@ -9,3 +9,7 @@ rules:
     steps:
     - intent: conversa
     - action: utter_conversa
+  - rule: Handle Excecao
+    steps:
+    - intent: excecao
+    - action: utter_excecao

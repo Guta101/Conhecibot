@@ -7,13 +7,28 @@ stories:
   - action: action_imprimir_artigo
   - action: utter_feedback
   - checkpoint: perguntas_check_feedback
+
 - story: perguntas_feedback_positivo
   steps:
   - checkpoint: perguntas_check_feedback
   - intent: positivo
   - action: utter_positivo
+
 - story: perguntas_feedback_negativo
   steps:
   - checkpoint: perguntas_check_feedback
+  - intent: negativo
+  - action: utter_retry
+  - checkpoint: perguntas_check_retry
+
+- story: perguntas_feedback_negativo_retry_positivo
+  steps:
+  - checkpoint: perguntas_check_retry
+  - intent: positivo
+  - action: action_imprimir_artigo_resto
+
+- story: perguntas_feedback_negativo_retry_positivo
+  steps:
+  - checkpoint: perguntas_check_retry
   - intent: negativo
   - action: utter_negativo

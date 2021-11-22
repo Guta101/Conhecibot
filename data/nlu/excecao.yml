@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: excecao
+  examples: |
+    - quanto é 2 + 2?
+    - quem é o presidente?
+    - qual a sua cor favorita?

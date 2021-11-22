@@ -15,6 +15,8 @@ intents:
     use_entities: true
 - perguntas:
     use_entities: true
+- excecao:
+    use_entities: false
 entities:
 - materias
 slots:
@@ -29,19 +31,12 @@ responses:
   utter_conversa/adeus:
   - text: Até mais!
   - text: Até a próxima!
-  utter_conversa/como_esta:
-  - text: Tudo bem! e você?
-  utter_conversa/onde:
-  - text: Eu moro em Minas Gerais!
-  utter_conversa/quantos_anos:
-  - text: Eu fui criado em 2021!
   utter_feedback:
   - text: Este artigo foi útil?
   - text: Este artigo lhe ajudou?
-  utter_conversa/saudacoes:
-  - text: Eai!
 actions:
 - action_procurar_artigo
 - action_imprimir_artigo
+- action_imprimir_artigo_resto
 forms: {}
 e2e_actions: []
