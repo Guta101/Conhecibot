@@ -7,28 +7,80 @@ stories:
   - action: action_imprimir_artigo
   - action: utter_feedback
   - checkpoint: perguntas_check_feedback
-
 - story: perguntas_feedback_positivo
   steps:
   - checkpoint: perguntas_check_feedback
   - intent: positivo
   - action: utter_positivo
-
 - story: perguntas_feedback_negativo
   steps:
   - checkpoint: perguntas_check_feedback
   - intent: negativo
   - action: utter_retry
   - checkpoint: perguntas_check_retry
-
 - story: perguntas_feedback_negativo_retry_positivo
   steps:
   - checkpoint: perguntas_check_retry
   - intent: positivo
   - action: action_imprimir_artigo_resto
-
-- story: perguntas_feedback_negativo_retry_positivo
+- story: perguntas_feedback_negativo_retry_negativo
   steps:
   - checkpoint: perguntas_check_retry
   - intent: negativo
   - action: utter_negativo
+- story: Story from Conversation ID 26acdc78b11846c1b141547d4f6a3fdf
+  steps:
+  - intent: perguntas
+    entities:
+    - materias: Testando
+  - slot_was_set:
+    - materias: Testando
+  - action: action_procurar_artigo
+  - slot_was_set:
+    - artigos:
+      - id: 4fba2128-a3e8-49fe-8ecd-68a64a41fc66
+        createdAt: '2021-11-24T15:20:30.888Z'
+        updatedAt: '2021-11-24T15:32:43.877Z'
+        deletedAt: null
+        title: Testando a criação do artigo
+        content: https://blog-content-article.s3.amazonaws.com/9d293a6fd9fceec4c19a-content.md
+        thumbnail: https://blog-thumbnail-article.s3.amazonaws.com/52736b533214cdf54efa-blog_image.jpg
+        status: APPROVED
+        description: Outro simples teste de criação de artigo
+        authorId: 2d5378d1-4c40-4b3b-9edc-4be8a4cb9e81
+        reviewerId: 2d5378d1-4c40-4b3b-9edc-4be8a4cb9e81
+        amountClaps: 0
+        author:
+          id: 2d5378d1-4c40-4b3b-9edc-4be8a4cb9e81
+          createdAt: '2021-11-20T21:39:59.705Z'
+          updatedAt: '2021-11-21T13:14:58.473Z'
+          deletedAt: null
+          name: Gravina william
+          avatar: https://blog-avatar-user.s3.amazonaws.com/122fe323ebe6de8d03be-person.jpeg
+        topics:
+        - id: af9f2014-c6ce-4d7b-bd55-6116f11f9456
+          createdAt: '2021-11-21T00:10:53.048Z'
+          updatedAt: '2021-11-21T00:10:53.048Z'
+          deletedAt: null
+          name: Camada de aplicação
+          subjectId: 941a5df8-74d1-4f35-9d4c-fad3b3bf0757
+        - id: f92631eb-1009-4b19-93c6-a5325ad87e6e
+          createdAt: '2021-11-21T00:11:01.555Z'
+          updatedAt: '2021-11-21T00:11:01.555Z'
+          deletedAt: null
+          name: Camada de transporte
+          subjectId: 941a5df8-74d1-4f35-9d4c-fad3b3bf0757
+        - id: a3d0c136-4b18-48b9-b115-57fd3d4ecf94
+          createdAt: '2021-11-21T00:13:31.424Z'
+          updatedAt: '2021-11-21T00:13:31.424Z'
+          deletedAt: null
+          name: Camada física
+          subjectId: 941a5df8-74d1-4f35-9d4c-fad3b3bf0757
+  - action: action_imprimir_artigo
+  - action: utter_feedback
+  - intent: negativo
+  - action: utter_retry
+  - intent: positivo
+  - slot_was_set:
+    - materias: Testando
+  - action: action_imprimir_artigo_resto

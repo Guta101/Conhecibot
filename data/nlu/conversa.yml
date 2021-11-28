@@ -13,6 +13,7 @@ nlu:
     - alo
     - salve
     - E aí
+    - Oi
 - intent: conversa/adeus
   examples: |
     - boa noite
@@ -37,6 +38,7 @@ nlu:
     - você está feliz?
     - você está triste?
     - tudo ok com você?
+    - Como você está?
 - intent: conversa/quantos_anos
   examples: |
     - quantos anos você tem?

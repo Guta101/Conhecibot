@@ -16,7 +16,7 @@ intents:
 - perguntas:
     use_entities: true
 - excecao:
-    use_entities: false
+    use_entities: []
 entities:
 - materias
 slots:
@@ -26,7 +26,10 @@ slots:
     auto_fill: true
     influence_conversation: true
   artigos:
-    type: list
+    type: rasa.shared.core.slots.ListSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
 responses:
   utter_conversa/adeus:
   - text: Até mais!
